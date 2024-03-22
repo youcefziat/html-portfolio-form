@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Primary School Enrollment/Re-enrollment Form</title>
+</head>
+<body>
+    <form id="survey-form">
+    <h1 id="title">Primary School Enrollment/Re-enrollment Form</h1>
+    <p id="description">Our Primary School Enrollment/Re-enrollment Form simplifies the registration process for parents and guardians, gathering essential student and contact details. It includes permissions for school activities and photo use, along with space for special requests. By submitting this form, parents affirm the accuracy of the information provided, facilitating seamless enrollment or re-enrollment in our school, ensuring effective communication and support throughout their child's educational journey.</p>
+    <fieldset>
+        <legend>Student Information:</legend>
+        <label for="child last-name">Student's Last Name:<input id="child last-name" name="child last-name" type="text" required></label>
+        <label for="child first-name">Student's First Name:<input id="child first-name" name="child first-name" type="text" required></label>
+        <label for="date-of-birth">Date of Birth:<input id="date-of-birth" name="date-if-birth" type="date" required></label>
+        <label for="address">Address:<input id="address" name="address" type="text" required></label>
+        <label for="c-phone">Phone Number:<input id="c-phone" name="c-phone" type="tel"></label>
+        <label for="dropdown">Inscription grade:
+            <select id="dropdown">
+                <option value="">(select one)</option>
+                <option value="0">Pre-Kindergarten</option>
+                <option value="1">First Grade</option>
+                <option value="2">Second Grade</option>
+                <option value="3">Third Grade</option>
+                <option value="4">Fourth Grade</option>
+                <option value="5">Fifth Grade</option>
+                <option value="6">Sixth Grade</option>
+            </select>
+        </label>
+        <fieldset>
+            <legend>Gender</legend>
+        <label for="gender-boy">Boy : <input id="gender-boy" name="gender" type="radio" class="inline" value="boy" checked></label>
+        <label for="gender-girl">Girl : <input id="gender-girl" name="gender" type="radio" class="inline" value="girl"></label>
+        </fieldset>
+    </fieldset>
+    <fieldset>
+        <legend>Parent/Guardian Information:</legend>
+        <label for="last-name">Parent/Guardian Last Name:<input id="name" name="last-name" type="text" required></label>
+        <label for="name-label">Parent/Guardian First Name:<input id="name-label" name="name-label" type="text" placeholder=" " required></label>
+        <label for="number">Number of children attending our school <input id="number" name="number" type="number" min="1" max="100" placeholder="1,2,3.."/></label>
+        <label for="phone">Primary Phone Number:<input id="phone" name="phone" type="tel" required></label>
+        <label for="secondary phone">Secondary Phone Number:<input id="secondary phone" name="secondary phone" type="tel"></label>
+        <label for="email-label">Email Address:<input id="email-label" name="email-label" type="email" placeholder="@" required></label>
+    </fieldset> 
+    <fieldset>
+        <legend>Permissions:</legend>
+        <label for="permission-one">I give permission for my child to participate in school outings organized by the school.<input claas="permission" id="permission-one" name="" type="checkbox" value="1" required/></label>
+        <label for="permission-two">I consent to my child's photos being taken and used for school purposes.<input  claas="permission" id="permission-two" name="" type="checkbox" value="2" required/></label>
+        <label for="permission-three">I understand that the information provided will be used solely for administrative and school-related purposes.<input  claas="permission" id="permission-three" name="" type="checkbox" value="3" required/></label>
+    </fieldset>    
+    <fieldset>
+        <legend>Remarks or Special Requests:</legend>
+        <label for="remarks"><textarea id="remarks" name="remarks" rows="5"  cols="30">Remarks or special requests...</textarea></label>
+    </fieldset>
+    <fieldset>
+        <p class="submiting">By submitting this form, I confirm that all provided information is accurate and that I understand my responsibilities as a parent/guardian of a student enrolled or re-enrolled in this school.</p>
+        <label for="signature">Parent/Guardian:<input id="signature" name="signature" type="text" placeholder="Enter your first and last name" required/></label>
+        <label for="date">Date:<input id="date" name="date" type="date" required/></label>
+        <hr/>
+        <input id="id" type="submit" value="Submit" /> 
+    </fieldset>
+    </form>
+</body>
+</html>
